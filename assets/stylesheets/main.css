@@ -49,6 +49,57 @@ table {
 
 /*
   ========================================
+  Custom styles
+  ========================================
+*/
+
+.title {
+	font-family: "Cambria";
+	font-weight: 600;
+}
+
+.byline {
+	padding-left: 20px;
+	font-family: Cambria;
+	font-size: 18px;
+}
+
+.summary {
+	margin-top: 20px;
+}
+
+.description {
+	line-height: 1.5;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.set_off {
+	float: left;
+	width: 55%
+	border-width: 4px;
+	border-style: groove;
+	border-color: black;
+	padding: 25px;
+	margin: 50px 10px 50px 10px;
+}
+
+.projects {
+	float: right;
+	width: 55%
+	border-width: medium;
+	border-style: groove;
+	border-color: black;
+	padding: 25px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/*
+  ========================================
   Grid
   ========================================
 */
@@ -59,17 +110,6 @@ table {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-header {
-	border-top: 4px solid silver;
-	padding: 40px 0 22px 0;
-	border-bottom: 4px solid silver;
-}
-
-footer {
-	padding-bottom: 44px;
-	padding-top: 44px;
 }
 
 .container,
@@ -102,29 +142,6 @@ footer {
   padding-right: 15px;
 }
 
-.set_off {
-	float: left;
-	width: 55%
-	border-width: 4px;
-	border-style: groove;
-	border-color: black;
-	padding: 25px;
-	margin: 50px 10px 50px 10px;
-}
-
-.projects {
-	float: right;
-	width: 55%
-	border-width: medium;
-	border-style: groove;
-	border-color: black;
-	padding: 25px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
 /*
   ========================================
   Clearfix
@@ -149,8 +166,56 @@ footer {
   ========================================
 */
 
-h1, h3, h4, h5, p {
-  margin-bottom: 22px;
+h1, h2, h3, h4, h5, p {
+  margin-bottom: 25px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+strong {
+  font-weight: 500;
+}
+cite, em {
+  font-style: italic;
+}
+small {
+	color: silver;
+	font-weight: 500;
+}
+header {
+	border-top: 4px solid silver;
+	padding: 54px 0 22px 0;
+	border-bottom: 4px solid silver;
+	line-height: 44px;
+}
+
+footer {
+	padding-bottom: 44px;
+	padding-top: 44px;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a:hover {
+  color: #a9b2f9;
+}
+a {
+  color: silver;
 }
 
 /*
@@ -163,9 +228,12 @@ h1, h3, h4, h5, p {
   border-radius: 40px;
   display: inline-block;
   margin: 0;
+	/* height: 32px;
+	line-height: 32px; */
 }
 
 .btn-alt {
   border: 1px solid black;
   padding: 20px;
+	margin-top: 40px;
 }
