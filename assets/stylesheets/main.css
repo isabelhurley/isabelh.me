@@ -54,24 +54,27 @@ table {
 */
 
 .title {
-	font-family: "Cambria";
 	font-weight: 600;
+	font-family: Palatino, serif;
 }
 
 .byline {
 	padding-left: 20px;
-	font-family: Cambria;
 	font-size: 18px;
+	font-family: Palatino, serif;
 }
 
 .summary {
-	margin-top: 20px;
+	font-weight: 500;
+	font-family: Palatino, serif;
 }
 
 .description {
 	line-height: 1.5;
 	padding-left: 20px;
 	padding-right: 20px;
+	font-family: Palatino, serif;
+	text-align: justify;
 }
 
 .set_off {
@@ -166,19 +169,26 @@ table {
   ========================================
 */
 
-h1, h2, h3, h4, h5, p {
-  margin-bottom: 25px;
+h1, h2, h3, h4, h5 {
+  margin-top: 35px;
+	margin-bottom: 15px;
+}
+p {
+	margin-bottom: 20px;
 }
 h1 {
   font-size: 36px;
   line-height: 44px;
+	text-shadow: 3px 4px 2px rgba(0, 0, 0, .2);
 }
 h2 {
   font-size: 24px;
   line-height: 44px;
+	text-shadow: 3px 4px 2px rgba(0, 0, 0, .2);
 }
 h3 {
   font-size: 21px;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, .2);
 }
 h4 {
   font-size: 18px;
@@ -194,12 +204,14 @@ small {
 	font-weight: 500;
 }
 header {
-	border-top: 4px solid silver;
+	/* border-top: 4px solid silver; */
 	padding: 54px 0 22px 0;
 	border-bottom: 4px solid silver;
 	line-height: 44px;
 }
-
+body {
+	font-family: Palatino, serif;
+}
 footer {
 	padding-bottom: 44px;
 	padding-top: 44px;
@@ -216,6 +228,7 @@ a:hover {
 }
 a {
   color: silver;
+	text-decoration: none;
 }
 
 /*
@@ -236,4 +249,24 @@ a {
   border: 1px solid black;
   padding: 20px;
 	margin-top: 40px;
+}
+
+/*
+  ========================================
+  Animations
+  ========================================
+*/
+#title_border {
+		border-top: 4px solid silver;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    50% {border-top: 	border-top: 4px solid black;}
+}
+
+@keyframes mymove {
+    50% {border-top: 	border-top: 4px solid black;}
 }
