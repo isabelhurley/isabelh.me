@@ -72,7 +72,7 @@ table {
 .description {
 	line-height: 1.5;
 	padding-left: 20px;
-	padding-right: 20px;
+	padding-right: 45px;
 	font-family: Palatino, serif;
 	text-align: justify;
 }
@@ -179,7 +179,7 @@ p {
 h1 {
   font-size: 36px;
   line-height: 44px;
-	text-shadow: 3px 4px 2px rgba(0, 0, 0, .2);
+	text-shadow: 3px 4px 2px rgba(0, 0, 0, .1);
 }
 h2 {
   font-size: 24px;
@@ -188,6 +188,8 @@ h2 {
 }
 h3 {
   font-size: 21px;
+	line-height: 40px;
+	margin-top: 40px;
 	text-shadow: 2px 2px 1px rgba(0, 0, 0, .2);
 }
 h4 {
