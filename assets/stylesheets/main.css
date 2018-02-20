@@ -197,6 +197,7 @@ header {
 }
 body {
 	font-family: Palatino, serif;
+	/* background: linear-gradient(to bottom left, rgba(161,195,247,0), rgba(161,195,247,.5)); */
 }
 footer {
 	padding-bottom: 44px;
@@ -213,7 +214,7 @@ a:hover {
   color: #a9b2f9;
 }
 a {
-  color: silver;
+  color: #858fa3;
 	text-decoration: none;
 }
 
