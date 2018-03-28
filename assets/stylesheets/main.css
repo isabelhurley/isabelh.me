@@ -240,22 +240,3 @@ a {
 	color: black;
 }
 
-/*
-  ========================================
-  (TODO) Animations
-  ========================================
-*/
-#title_border {
-		border-top: 4px solid silver;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    50% {border-top: 	border-top: 4px solid black;}
-}
-
-@keyframes mymove {
-    50% {border-top: 	border-top: 4px solid black;}
-}
